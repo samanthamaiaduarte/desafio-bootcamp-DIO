@@ -11,11 +11,13 @@ import com.smd.desafiobootcamp.domains.Mentoring;
 public class Main {
 
 	public static void main(String[] args) {
+		/*Creating content*/
 		Content java = new Course("Java Backend", "Java for backend dev", 8);
 		Content javascript = new Course("Javascript Backend", "Javascript for backend dev", 10);
 		Content javaMentoring = new Mentoring("Java Mentoring", "Topic about java development", LocalDate.of(2024, 6, 1));
 		Content jsMentoring = new Mentoring("Javascript Mentoring", "Topic about javascript development", LocalDate.of(2024, 5, 31));
 		
+		/*Creating bootcamp and adding content at it*/
 		Bootcamp bootcampBackend = new Bootcamp("Dev Backend", "Be a backend dev", LocalDate.of(2004, 5, 13));
 		bootcampBackend.addContent(java);
 		bootcampBackend.addContent(javaMentoring);
@@ -24,10 +26,12 @@ public class Main {
 		
 		System.out.println(bootcampBackend);
 		
+		/*Creating Devs*/
 		Dev mariaGreen = new Dev("Maria Green");
 		Dev alexBrown = new Dev("Alex Brown");
 		Dev johnGrey = new Dev("John Grey");
 		
+		/*Registering Devs in the bootcamp*/
 		mariaGreen.registerBootcamp(bootcampBackend);
 		alexBrown.registerBootcamp(bootcampBackend);
 		johnGrey.registerBootcamp(bootcampBackend);
