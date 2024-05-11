@@ -15,4 +15,4 @@ To make the code more readable and easier to maintain, some of the tools that th
 
 ----------
 ## Diagram
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/samanthamaiaduarte/desafio-bootcamp-DIO/blob/main/assets/desafio-bootcamp.png"></p>
